@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add story</title>
+
+
+</head>
+<body>
+    <a href="{{url_for('route_list')}}">Back to main page</a>
+    <form action=" " method="post">
+        <p>Story Title <input type="text" name = "title"></p>
+        <p>User Story <input type="text" name = "user_story"></p>
+        <p>Acceptance Criteria <input type="text" name = "acceptance_criteria"></p>
+        <p>Business value <input type="number" name = "business_value"></p>
+        <p>Estimation <input type="number" name = "estimation"></p> 
+        <input type="submit" value="ADD STORY">
+</body>
+</html>

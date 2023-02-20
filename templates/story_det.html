@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content1 %}
+<a href="/list">Back to main page</a>
+{% endblock %}
+{% block content2 %}
+<td>{{story[0]}}</td>
+<td>{{story[1]}}</td>
+<td>{{story[2]}}</td>
+<td>{{story[3]}}</td>
+<td>{{story[4]}}</td>
+<td>{{story[5]}}</td>
+<td>{{story[6]}}</td>
+{% endblock %}
+{% block content3 %}
+<a href="../edit_story/{{story[0]}}">Edit values</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content1 %}
+<a href="../add_story">Add a new User Story</a> 
+{% endblock %}
+{% block content2 %}
+        {% for item in stories %}
+        <tr>
+          <td><a href="story\{{item['id']}}">{{item['id']}}</a></td>
+          <td>{{item['title']}}</td>
+          <td>{{item['user_story']}}</td>
+          <td>{{item['acceptance_criteria']}}</td>
+          <td>{{item['business_value']}}</td>
+          <td>{{item['estimation']}}</td>
+          <td>{{item['status']}}</td>
+        </tr>
+
+        {% endfor %}
+
+{% endblock %}
+

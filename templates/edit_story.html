@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit story</title>
+
+
+</head>
+<body>
+    <a href="../list">Back to main page</a>
+    <form action=" " method="post">
+        <p>Edit Story Title <input type="text" name = "title" value={{story[1]}}></p>
+        <p>Edit User Story <input type="text" name = "user_story" value="{{story[2]}}"></p>
+        <p>Edit Acceptance Criteria <input type="text" name = "acceptance_criteria" value="{{story[3]}}"></p>
+        <p>Edit Business value <input type="text" name = "business_value" value="{{story[4]}}"></p>
+        <p>Edit Estimation <input type="text" name = "estimation" value="{{story[5]}}"></p> 
+    <form action="/action_page.php">
+        <label for="cars">Choose status:</label>
+        <select name="status" id="status">
+            <optgroup label="Please select status">
+            <option value="planning">planning</option>
+            <option value="todo">todo</option>
+            <option value="in progress">in progress</option>
+            <option value="review">review</option>
+            <option value="done">done</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="submit" value="EDIT STORY">
+        </form>
+</body>
+</html>

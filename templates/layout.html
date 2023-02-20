@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}Main page{% endblock %}</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+  {% block content1 %}{% endblock %}
+    <table>
+        <colgroup>
+          <col span="7" style="background-color:rgb(255, 255, 255)">
+        </colgroup>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>User story</th>
+          <th>Acceptance criteria</th>
+          <th>Business value</th>
+          <th>Estimation</th>
+          <th>Status</th>
+        </tr>
+        {% block content2 %}{% endblock %}
+      </table>
+      {% block content3 %}{% endblock %}
+</body>
+</html>
+
